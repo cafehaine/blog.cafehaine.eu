@@ -9,7 +9,7 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 SSH_HOST=kyogre
-SSH_TARGET_DIR=/srv/blog
+SSH_TARGET_DIR=/srv/blog.cafehaine.eu
 
 
 DEBUG ?= 0
