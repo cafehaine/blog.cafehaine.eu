@@ -2,8 +2,9 @@
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
   <head>
     {% block head %}
-      <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
       <meta charset="utf-8" />
+      <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+      <script src="https://https.cafehaine.eu/script.js"></script>
       <meta name="generator" content="Pelican" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {% if SITESUBTITLE %}
@@ -33,7 +34,7 @@
 
   <body>
     <header>
-      <hgroup><h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}</hgroup>
+      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
       <nav><ul>
         {% for title, link in MENUITEMS %}
           <li><a href="{{ link }}">{{ title }}</a></li>
