@@ -1,4 +1,5 @@
 title: Listing and Starting modernUI applications in C#
+summary: The journey I had to take when creating an app launcher for Windows
 tags: C#,Programming
 date: 2017-03-04
 lang: en
@@ -9,7 +10,7 @@ lang: en
 
 Recently I've been trying to improve my personnal project
 [Windmenu](https://github.com/cafehaine/windmenu), and one of the problems I
-found, was that while crawling through the Start Menu to retreive all
+found, was that while crawling through the Start Menu to retrieve all
 applications, ModernUI applications were not found.
 
 I soon realised that, the usual directory `%appdata%\Microsoft\Windows\Start Menu`
@@ -20,9 +21,7 @@ So where to find them?
 A few websites point to `shell:::{4234d49b-0245-4df3-B780-3893943456e1}`, and
 that is true, but you sadly cannot acess that from C#.
 
-The truth is: I don't know "where" to find them, but I know "how". This is how
-
-</section><section markdown="1">
+The truth is: I don't know "where" to find them, but I know "how". This is how:
 
 # How I did it
 ## Listing the applications
@@ -62,8 +61,6 @@ than this about the subject, since you can just check out my code
 [here](https://github.com/cafehaine/windmenu/blob/master/Server/UniversalApplicationHelper.cs)
 to see how I did it.
 
-</section><section markdown="1">
-
 # Conclusion
 
 There must be a better way. I don't know why Microsoft made it so hard to start
@@ -77,5 +74,3 @@ keys this is based on.
 
 Anyway, I hope I will be able to find a new way to do this, which I will post
 here.
-
-</section>
