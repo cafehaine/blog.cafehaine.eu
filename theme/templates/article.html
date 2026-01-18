@@ -47,11 +47,6 @@
           {% endfor %}
         </address>
       {% endif %}
-      {% if article.category %}
-        <p>
-          Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-        </p>
-      {% endif %}
       {% if article.tags %}
         <p>
           Tags:

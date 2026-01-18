@@ -10,14 +10,12 @@ DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("cafehaine.eu", "https://www.cafehaine.eu"),
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
@@ -25,6 +23,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
+    ("Main site", "https://www.cafehaine.eu"),
     ("Fediverse: @cafehaine@pouet.chapril.org", "https://pouet.chapril.org/@cafehaine"),
     ("GitLab.com: @cafehaine", "https://gitlab.com/cafehaine"),
     ("GitHub: @cafehaine", "https://github.com/cafehaine"),
